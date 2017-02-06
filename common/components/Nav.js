@@ -6,8 +6,10 @@ import { StyleSheet, css } from 'aphrodite'
 const Nav = () => (
   <div>
     <IndexLink to='/' className={css(styles.link)} activeClassName={css(styles.link, styles.activeLink)}>
-      Home
+      About
     </IndexLink>
+    <Link to='/teams' className={css(styles.link)} activeClassName={css(styles.link, styles.activeLink)}> Teams
+    </Link>
     <Link to='/posts' className={css(styles.link)} activeClassName={css(styles.link, styles.activeLink)}> Example Feed
     </Link>
     <a href='https://github.com/jaredpalmer/react-production-starter' className={css(styles.link)} target='_blank'>GitHub</a>

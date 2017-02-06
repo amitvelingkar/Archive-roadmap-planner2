@@ -5,28 +5,28 @@ import { StyleSheet, css } from 'aphrodite'
 
 const App = ({ children }) => (
   <div className={css(styles.root)}>
-    <Helmet title='React Production Starter' titleTemplate='%s - React Production Starter' />
-    <h1 className={css(styles.title)}>React Production Starter</h1>
+    <Helmet title='Roadmap Planner' titleTemplate='%s - Roadmap Planner' />
+    <h1 className={css(styles.title)}>Roadmap Planner</h1>
     <Nav />
     {children}
     <footer className={css(styles.footer)}>
-      Copyright © 2016 <a className={css(styles.footerLink)} href='http://twitter.com/jaredpalmer' target='_blank'>Jared Palmer</a>
+      Copyright © 2017 <a className={css(styles.footerLink)} href='#' target='_blank'>Roadmap Planner</a>
     </footer>
   </div>
 )
 
 const styles = StyleSheet.create({
   root: {
-    maxWidth: 700,
     color: '#000',
     margin: '2rem auto',
     padding: '0 1rem'
   },
   title: {
-    color: '#000',
-    maxWidth: 300,
+    color: '#ccc',
     fontWeight: 'bold',
-    fontSize: 56
+    fontSize: 24,
+    backgroundColor: '#3F51B5',
+    padding: 5
   },
   footer: {
     margin: '4rem auto',
